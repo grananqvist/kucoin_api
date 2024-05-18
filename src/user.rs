@@ -493,7 +493,7 @@ impl Kucoin {
         &self,
         currency: &str,
         address: &str,
-        amount: i32,
+        amount: &str,
         memo: Option<&str>,
         is_inner: Option<bool>,
         remark: Option<&str>,

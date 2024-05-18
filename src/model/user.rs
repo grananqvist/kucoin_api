@@ -113,8 +113,8 @@ pub struct DepositAddress {
 pub struct DepositList {
     pub address: String,
     pub memo: String,
-    pub amount: i32,
-    pub fee: f32,
+    pub amount: String,
+    pub fee: String,
     pub currency: String,
     pub is_inner: bool,
     pub wallet_tx_id: String,
@@ -142,8 +142,8 @@ pub struct WithdrawalList {
     pub address: String,
     pub memo: String,
     pub currency: String,
-    pub amount: f32,
-    pub fee: f32,
+    pub amount: String,
+    pub fee: String,
     pub wallet_tx_id: String,
     pub is_inner: bool,
     pub status: String,
@@ -185,5 +185,5 @@ pub struct WithdrawalQuotas {
 #[derive(Debug, Deserialize, Serialize)]
 #[serde(rename_all = "camelCase")]
 pub struct WithdrawalId {
-    withdrawal_id: String,
+    pub withdrawal_id: String,
 }
