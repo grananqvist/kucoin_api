@@ -54,8 +54,8 @@ impl Kucoin {
         client_oid: &str,
         symbol: &str,
         side: &str,
-        size: Option<f32>,
-        funds: Option<f32>,
+        size: Option<&str>,
+        funds: Option<&str>,
         optionals: Option<OrderOptionals<'_>>,
     ) -> Result<APIDatum<OrderResp>, APIError> {
         let endpoint = String::from("/api/v1/orders");
